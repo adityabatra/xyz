@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XYZ</title>
+	<style type="text/css">
+		#user{
+			height:40px;
+			width:200px;
+			text-align: center;
+			font-family: "hnl";
+			margin-top: 20%;
+			display: none;
+
+		}
+		#pass{
+			height:40px;
+			width:200px;
+			text-align: center;
+			font-family: "hnl";
+			margin-top: 10px;
+			display: none;
+		}
+		.button{
+			height:40%;
+			width: 200px;
+			text-align: center;
+			font-family: "hnl";
+			margin-top: 10px;
+			display: none;
+		}
+		@font-face {
+			src: url("pnt.ttf");
+			font-family: 'pnt';
+		}
+		@font-face{
+			src:url("HelveticaNeue Light.ttf");
+			font-family: "hnl";
+		}
+		body{
+			background-color: #fff;
+		}
+		.line {
+			height: 3px;
+			width: 70%;
+			background: #ccc;
+			display: block;
+			line-height: 1.4em;
+			margin-top:50px;
+			display: block;
+		}
+		.heading{
+			text-align:center;
+			font-family:"pnt";
+			font-size:55px;
+			letter-spacing: 2px;
+			padding-top:50px;
+			color:rgb(45,47,67);
+			margin:10px;
+			display: block;
+		}
+		.always{
+			text-align:center;
+			font-family:"pnt";
+			font-size:65px;
+			letter-spacing: 5px;
+			padding-top:50px;
+			color:rgb(45,47,67);
+			margin:10px;	
+		}
+		.main {
+			background-color:White;
+			margin:5%;
+			margin-top:3%;
+			margin-right:10%;
+			margin-left:10%;
+			padding-top:20px;
+			display: block;
+		}
+		.name {
+			
+			font-size:23px;
+			font-weight:Bold;
+			font-family:"hnl";
+			letter-spacing:1px;
+		}
+		.position {
+			color:Black;
+			margin:6px;
+			font-size:15px;
+			font-weight:Bold;
+			font-family:"hnl";
+			letter-spacing:1px;
+			color:#E2D9FF;
+		}
+		.pic {
+			height:250px;
+			width:250px;
+			border-radius:130px;
+			margin:10px;
+			box-shadow: 0 6px 20px 0 #E2D9FF;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function myfunction(){
+			if ($("#user").val()=="xyz" && $("#pass").val()=="billionaire") {
+			$('.line').css({"display":"block"});
+			$('.heading').css({"display":"block"});
+			$('.main').css({"display":"block"});
+			$('.main1').css({"display":"none"});
+	}
+	else {	alert("wrong");
+	}
+		};
+	
+	</script>
+</head>
+<body>
+<center>
+
+	<div class="main1">
+	<input type="text" placeholder="USERNAME" id="user">
+	<center><input type="text" placeholder="PASSWORD" id="pass"></center>
+	<center><button class="button" onclick="myfunction()">LOG IN</button></center>
+	</div>
+	</center>
+	<div class="break">
+		<br><br>	</div>
+	<center>
+	<div class="heading">
+		XYZ
+	</div>
+	<div class="line"></div>
+	<div class="main">
+		<div class="box">
+			<CENTER>
+			<img src="aditya.jpg" class="pic">
+			<div class="name">
+				ADITYA BATRA
+			</div>
+			<div class="position">
+				DIMAAG
+			</div><br>
+			</CENTER>
+		</div>	
+		<div class="box">
+			<CENTER>
+			<img src="aryan.jpg" class="pic">
+			<div class="name">
+				ARYAN DUA
+			</div>
+			<div class="position">
+				DELEGATE
+			</div><br>
+			</CENTER>
+		</div>	
+		<div class="box">
+			<CENTER>
+			<img src="sameer.jpg" class="pic">
+			<div class="name">
+				SAMEER CHADHA
+			</div>
+			<div class="position">
+				SOCIAL MEDIA
+			</div><br>
+			</CENTER>
+		</div>	
+		<div class="box">
+			<CENTER>
+			<img src="shivam.jpg" class="pic">
+			<div class="name">
+				SHIVAM WADHWA
+			</div>
+			<div class="position">
+				OFFENDED
+			</div><br>
+			</CENTER>
+		</div>	
+		<div class="box">
+			<CENTER>
+			<img src="pratham.jpg" class="pic">
+			<div class="name">
+				PRATHAM KOCHHAR
+			</div>
+			<div class="position">
+				EXISTS?!
+			</div><br>
+			</CENTER>
+		</div>	
+		<div class="always">
+		ALWAYS THERE 
+		</div>
+	</div>
+	</center>
+</body>
+</html>
